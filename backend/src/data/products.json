@@ -1,0 +1,861 @@
+[
+  {
+    "id": "nv-1795173198147",
+    "name": "Cashmere Flannel Overshirt",
+    "subtitle": "Italian Cashmere & Virgin Wool Blend",
+    "price": 4590,
+    "originalPrice": 5800,
+    "currency": "Rs.",
+    "rating": 5,
+    "reviewCount": 1,
+    "category": "Clothing",
+    "gender": "Men",
+    "isBestSeller": true,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "description": "Crafted with premium materials for everyday living.",
+    "hangerDetails": {
+      "swayIntensity": "medium",
+      "cut": "Structured Oversized",
+      "fabricWeight": "300 GSM Brushed Flannel",
+      "hangerType": "Solid Walnut Deluxe Coat Hanger"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Natural Sand",
+        "hex": "#D8CAB8"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "inStock": true,
+    "details": [
+      "100% sustainably sourced fabric",
+      "Boutique hanger display tag included"
+    ],
+    "shipping": "Standard delivery Rs. 200 nationwide.",
+    "returns": "30-day exchange available."
+  },
+  {
+    "id": "nv-101",
+    "name": "Classic Oversized Shirt",
+    "subtitle": "Short Category / Everyday Linen",
+    "price": 2498,
+    "originalPrice": 3299,
+    "currency": "Rs.",
+    "rating": 4.8,
+    "reviewCount": 213,
+    "category": "Clothing",
+    "gender": "Men",
+    "isBestSeller": true,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "description": "Crafted from a breathable organic cotton-linen blend, our signature Classic Oversized Shirt offers an effortless relaxed silhouette designed for everyday living. Features mother-of-pearl buttons, a soft structured collar, and a gently curved hem.",
+    "hangerDetails": {
+      "fabricWeight": "180 GSM Pure Linen",
+      "hangerType": "Scandi Oak Wood with Brushed Brass Hook",
+      "cut": "Relaxed Boxy Fit",
+      "swayIntensity": "medium"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Ecru Beige",
+        "hex": "#D8CAB8",
+        "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Warm Sand",
+        "hex": "#C2B29A",
+        "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Soft Taupe",
+        "hex": "#8A8074",
+        "image": "https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#1A1A1A",
+        "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "inStock": true,
+    "details": [
+      "100% sustainably sourced organic linen cotton",
+      "Mother of pearl finished button closures",
+      "Box pleat at back for comfortable drape and movement",
+      "Machine wash delicate at 30°C; line dry in shade"
+    ],
+    "shipping": "Free standard shipping across Pakistan on orders over Rs. 5,000. Orders delivered within 2-4 business days.",
+    "returns": "30-day hassle-free returns & exchanges. Item must be in original condition with hanger tags intact."
+  },
+  {
+    "id": "nv-102",
+    "name": "Essential Hoodie",
+    "subtitle": "Warm Heavyweight French Terry",
+    "price": 2905,
+    "originalPrice": 3800,
+    "currency": "Rs.",
+    "rating": 4.7,
+    "reviewCount": 184,
+    "category": "Clothing",
+    "gender": "Men",
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "isHangerItem": true,
+    "description": "The quintessential modern hoodie. Spun from 450 GSM luxury brushed cotton fleece with dropped shoulders, double-layered hood without drawstrings for a minimal aesthetic, and ribbed cuff accents.",
+    "hangerDetails": {
+      "fabricWeight": "450 GSM Heavy French Terry",
+      "hangerType": "Matte Black Curved Shoulder Hanger",
+      "cut": "Oversized Street Draped",
+      "swayIntensity": "heavy"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Oatmeal Grey",
+        "hex": "#C9C4BC",
+        "image": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Muted Sage",
+        "hex": "#949B8D",
+        "image": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Midnight Charcoal",
+        "hex": "#272727",
+        "image": "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "inStock": true,
+    "details": [
+      "Heavyweight 450 GSM brushed cotton interior",
+      "Double lined hood with clean seamless finish",
+      "Kangaroo pouch pocket with reinforced bartacks",
+      "Pre-shrunk to maintain silhouette wash after wash"
+    ],
+    "shipping": "Standard delivery Rs. 200 nationwide. Dispatched within 24 hours.",
+    "returns": "30-day exchange guarantee."
+  },
+  {
+    "id": "nv-103",
+    "name": "Minimal Leather Bag",
+    "subtitle": "Full-Grain Italian Calfskin",
+    "price": 5469,
+    "originalPrice": 6999,
+    "currency": "Rs.",
+    "rating": 4.9,
+    "reviewCount": 97,
+    "category": "Accessories",
+    "gender": "Accessories",
+    "isBestSeller": true,
+    "isNewArrival": true,
+    "isHangerItem": false,
+    "description": "Architectural clean lines paired with supple full-grain Italian leather. Features brushed gunmetal hardware, internal padded 14-inch laptop divider, magnetic flap closure, and an adjustable shoulder strap.",
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Noir Black",
+        "hex": "#111111",
+        "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Cognac Brown",
+        "hex": "#764A23",
+        "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "inStock": true,
+    "details": [
+      "100% full-grain tanned leather",
+      "Microfiber faux suede lining",
+      "Dedicated padded sleeve for 13-14 inch laptops",
+      "Dimensions: 38cm x 28cm x 11cm"
+    ],
+    "shipping": "Free express courier delivery on this item.",
+    "returns": "30-day inspection guarantee with protective dust bag."
+  },
+  {
+    "id": "nv-104",
+    "name": "Everyday Sneakers",
+    "subtitle": "Italian Nappa Leather / Gum Sole",
+    "price": 5469,
+    "originalPrice": 6200,
+    "currency": "Rs.",
+    "rating": 4.8,
+    "reviewCount": 142,
+    "category": "Footwear",
+    "gender": "Men",
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "isHangerItem": false,
+    "description": "Timeless low-top court sneakers handcrafted from supple Italian Nappa leather. Engineered with memory foam footbeds and durable vulcanized natural rubber soles for all-day cushioning.",
+    "images": [
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Pure Chalk White",
+        "hex": "#F4F4F2",
+        "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Off-White & Suede",
+        "hex": "#E2DCD0",
+        "image": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "inStock": true,
+    "details": [
+      "Hand-stitched upper in soft calfskin leather",
+      "Ortholite moisture-wicking ergonomic insole",
+      "Reinforced waxed cotton laces",
+      "Made to pair with tailored trousers and denim"
+    ],
+    "shipping": "Delivered in bespoke NOVAÉ pull-out drawer shoebox.",
+    "returns": "Free size exchanges."
+  },
+  {
+    "id": "nv-105",
+    "name": "Premium Sunglasses",
+    "subtitle": "Handcrafted Acetate / UV400",
+    "price": 2299,
+    "originalPrice": 3100,
+    "currency": "Rs.",
+    "rating": 4.6,
+    "reviewCount": 89,
+    "category": "Accessories",
+    "gender": "Accessories",
+    "isBestSeller": true,
+    "isNewArrival": true,
+    "isHangerItem": false,
+    "description": "Sculpted bio-acetate frames featuring subtle beveling, five-barrel German hinges, and polarized category 3 lenses providing complete UV400 sun protection.",
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Dark Tortoise",
+        "hex": "#422817",
+        "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Glossy Onyx",
+        "hex": "#0D0D0D",
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "Standard"
+    ],
+    "inStock": true,
+    "details": [
+      "100% UV400 polarized clarity lenses",
+      "Reinforced core wire through temples",
+      "Includes hard case and microfibre cleaning pouch",
+      "Anti-glare interior coating"
+    ],
+    "shipping": "Secure bubble-wrapped delivery nationwide.",
+    "returns": "14-day replacement guarantee."
+  },
+  {
+    "id": "nv-106",
+    "name": "Classic Diversified Shirt Dress",
+    "subtitle": "Relaxed Silhouette with Belt",
+    "price": 2488,
+    "originalPrice": 3400,
+    "currency": "Rs.",
+    "rating": 4.7,
+    "reviewCount": 118,
+    "category": "Clothing",
+    "gender": "Women",
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "description": "A fluid, versatile shirt dress tailored with subtle dropped shoulders and an optional sash belt. Wear it buttoned as an effortless daytime dress or open as a lightweight seasonal duster layer.",
+    "hangerDetails": {
+      "fabricWeight": "200 GSM Soft Tencel Drape",
+      "hangerType": "Slim Rose Gold Metallic Hanger",
+      "cut": "Fluid Ankle-Grazing Cut",
+      "swayIntensity": "high"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Pitch Black",
+        "hex": "#1B1B1B",
+        "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Alabaster White",
+        "hex": "#F3F0EB",
+        "image": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "inStock": true,
+    "details": [
+      "Silky soft Lyocell Tencel blend",
+      "Concealed side seam pockets",
+      "Removable matching fabric tie belt",
+      "Side slit hem for graceful mobility"
+    ],
+    "shipping": "Standard delivery Rs. 200.",
+    "returns": "30-day exchange available."
+  },
+  {
+    "id": "nv-107",
+    "name": "Thermal Backpack",
+    "subtitle": "Weatherproof Matte Cordura",
+    "price": 4099,
+    "originalPrice": 5200,
+    "currency": "Rs.",
+    "rating": 4.5,
+    "reviewCount": 76,
+    "category": "Backpack",
+    "gender": "Accessories",
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "isHangerItem": false,
+    "description": "Engineered for urban commuters and weekend travelers. Built with water-resistant coated fabric, magnetic Fidlock buckle, waterproof YKK Aquaguard zippers, and ergonomic ventilated shoulder straps.",
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Stealth Black",
+        "hex": "#191919",
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Charcoal Grey",
+        "hex": "#3A3D40",
+        "image": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "22 Litres"
+    ],
+    "inStock": true,
+    "details": [
+      "High-density 900D weatherproof polyester shell",
+      "Dedicated fleece-lined 15.6 inch laptop sleeve",
+      "Luggage pass-through strap for travel suitcases",
+      "Dual hidden anti-theft passport pockets"
+    ],
+    "shipping": "Dispatched in sturdy shipping carton.",
+    "returns": "30-day satisfaction guarantee."
+  },
+  {
+    "id": "nv-108",
+    "name": "Casual Minimalist Cap",
+    "subtitle": "Washed Twill / Antique Brass Buckle",
+    "price": 1450,
+    "originalPrice": 1900,
+    "currency": "Rs.",
+    "rating": 4.6,
+    "reviewCount": 164,
+    "category": "Accessories",
+    "gender": "Accessories",
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "isHangerItem": false,
+    "description": "Unstructured 6-panel low-profile dad cap crafted from vintage-washed organic cotton twill. Finished with an antique brass adjustment clasp and tonal embroidered brand insignia.",
+    "images": [
+      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1534215754734-18e55d13e346?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Desert Khaki",
+        "hex": "#A89F8B",
+        "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Washed Slate",
+        "hex": "#4F5D65",
+        "image": "https://images.unsplash.com/photo-1534215754734-18e55d13e346?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "Adjustable One Size"
+    ],
+    "inStock": true,
+    "details": [
+      "100% breathable organic cotton twill",
+      "Pre-curved visor with subtle stitching",
+      "Embroidered eyelets for maximum ventilation",
+      "Metal clasp slider fits all head circumferences"
+    ],
+    "shipping": "Standard delivery Rs. 200.",
+    "returns": "14-day exchange."
+  },
+  {
+    "id": "nv-109",
+    "name": "Relaxed Linen Trousers",
+    "subtitle": "Pleated Front / Drawstring Waist",
+    "price": 3199,
+    "originalPrice": 4200,
+    "currency": "Rs.",
+    "rating": 4.8,
+    "reviewCount": 133,
+    "category": "Clothing",
+    "gender": "Men",
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "description": "Effortlessly sophisticated trousers tailored with single forward pleats, deep slant pockets, and an elasticized waist with concealed interior drawstring. Cut for an airy, slightly tapered drape.",
+    "hangerDetails": {
+      "fabricWeight": "240 GSM Pure European Flax Linen",
+      "hangerType": "Wooden Trouser Clamp Hanger with Velvet Lining",
+      "cut": "Tapered Relaxed Flow",
+      "swayIntensity": "medium"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Natural Cream",
+        "hex": "#E8E3DA",
+        "image": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Olive Drab",
+        "hex": "#555B49",
+        "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Deep Midnight",
+        "hex": "#1F232B",
+        "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "inStock": true,
+    "details": [
+      "100% Normandy certified linen fiber",
+      "Single pleat detailing with pressed crease",
+      "Real horn button back welt pockets",
+      "Breathable weave ideal for warm climate wear"
+    ],
+    "shipping": "Standard delivery Rs. 200.",
+    "returns": "30-day exchange."
+  },
+  {
+    "id": "nv-110",
+    "name": "Ribbed Knit Crewneck Sweater",
+    "subtitle": "Merino Wool Blend Knitwear",
+    "price": 3450,
+    "originalPrice": 4500,
+    "currency": "Rs.",
+    "rating": 4.9,
+    "reviewCount": 88,
+    "category": "Clothing",
+    "gender": "Women",
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "description": "Luxuriously soft chunkier rib knit sweater spun from fine merino wool and soft organic cotton. Features raglan sleeves, ribbed cuff trims, and a clean mock collar that frames the neck gracefully.",
+    "hangerDetails": {
+      "fabricWeight": "7-Gauge Chunky Knit Merino",
+      "hangerType": "Broad Wooden Contoured Knit Hanger",
+      "cut": "Sculptural Boxy Cocoon",
+      "swayIntensity": "heavy"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Warm Ivory",
+        "hex": "#FAF6F0",
+        "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Heather Grey",
+        "hex": "#9E9E9E",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "inStock": true,
+    "details": [
+      "60% extrafine Merino Wool, 40% Long-Staple Cotton",
+      "Non-scratchy, cloud-soft tactile hand feel",
+      "Naturally thermal regulating & breathable",
+      "Dry clean or gentle hand wash in lukewarm water"
+    ],
+    "shipping": "Free shipping on orders over Rs. 5,000.",
+    "returns": "30-day exchange."
+  },
+  {
+    "id": "nv-111",
+    "name": "Tailored Minimalist Trench Coat",
+    "subtitle": "Double-Breasted Stormproof Twill",
+    "price": 7999,
+    "originalPrice": 9999,
+    "currency": "Rs.",
+    "rating": 5,
+    "reviewCount": 64,
+    "category": "Clothing",
+    "gender": "Women",
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "description": "An investment statement outerwear piece. Tailored from water-repellent gabardine twill with a double-breasted button front, wide notched lapels, raglan storm flap, and a buckle belt that defines the waist.",
+    "hangerDetails": {
+      "fabricWeight": "380 GSM Heavy Gabardine Twill",
+      "hangerType": "Solid Walnut Deluxe Coat Hanger",
+      "cut": "Longline Structured Oversized",
+      "swayIntensity": "heavy"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Classic Camel",
+        "hex": "#B88E5E",
+        "image": "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Midnight Ink",
+        "hex": "#1B232D",
+        "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "inStock": true,
+    "details": [
+      "Water-repellent bonded cotton gabardine",
+      "Full cupro lining for smooth layering over knitwear",
+      "Adjustable storm cuffs with horn look buckles",
+      "Deep interior security pocket"
+    ],
+    "shipping": "Complimentary insured express delivery with deluxe garment bag and hanger.",
+    "returns": "30-day exchange."
+  },
+  {
+    "id": "nv-112",
+    "name": "Classic Minimalist Watch",
+    "subtitle": "Sapphire Crystal / Milanese Mesh Strap",
+    "price": 6499,
+    "originalPrice": 8500,
+    "currency": "Rs.",
+    "rating": 4.8,
+    "reviewCount": 115,
+    "category": "Accessories",
+    "gender": "Accessories",
+    "isBestSeller": false,
+    "isNewArrival": false,
+    "isHangerItem": false,
+    "description": "Subtle luxury for the wrist. Features a 38mm surgical-grade 316L stainless steel case, scratch-resistant sapphire crystal glass, Japanese quartz movement, and interchangeable quick-release straps.",
+    "images": [
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Brushed Silver",
+        "hex": "#D1D5DB",
+        "image": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Matte Black",
+        "hex": "#1F2937",
+        "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "38mm Case"
+    ],
+    "inStock": true,
+    "details": [
+      "316L surgical stainless steel casing",
+      "Anti-reflective scratch-proof Sapphire crystal",
+      "5 ATM (50 meters) water resistance rating",
+      "Includes 2-year international warranty card"
+    ],
+    "shipping": "Secure presentation gift box delivery.",
+    "returns": "30-day money back guarantee."
+  },
+  {
+    "id": "nv-113",
+    "name": "Silk Linen Flowing Blouse",
+    "subtitle": "Relaxed Bohemian Tailoring",
+    "price": 2850,
+    "originalPrice": 3600,
+    "currency": "Rs.",
+    "rating": 4.9,
+    "reviewCount": 94,
+    "category": "Clothing",
+    "gender": "Women",
+    "isBestSeller": true,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "description": "An ethereal blend of mulberry silk and organic Belgian linen. Designed with billowy sleeves, delicate pearl buttons, and an elegant band collar.",
+    "hangerDetails": {
+      "fabricWeight": "140 GSM Silk Linen Whisper",
+      "hangerType": "Slim White Oak Contoured Hanger",
+      "cut": "Fluid Billowy Fit",
+      "swayIntensity": "high"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1564257631407-4deb12c10493?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1551803091-e20673f15770?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Pearl White",
+        "hex": "#F8F7F3",
+        "image": "https://images.unsplash.com/photo-1564257631407-4deb12c10493?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Blush Almond",
+        "hex": "#E8DDD5",
+        "image": "https://images.unsplash.com/photo-1551803091-e20673f15770?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "inStock": true,
+    "details": [
+      "70% Belgian Linen, 30% Mulberry Silk",
+      "Mother of pearl button fastenings",
+      "Dry clean or cold hand wash"
+    ],
+    "shipping": "Standard delivery Rs. 200.",
+    "returns": "30-day exchange."
+  },
+  {
+    "id": "nv-114",
+    "name": "Structured Wool Blazer",
+    "subtitle": "Double-Breasted Italian Twill",
+    "price": 8499,
+    "originalPrice": 10500,
+    "currency": "Rs.",
+    "rating": 5,
+    "reviewCount": 42,
+    "category": "Clothing",
+    "gender": "Women",
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "description": "Power dressing reimagined with modern relaxed proportions. Tailored with padded shoulders, horn buttons, peak lapels, and full cupro lining.",
+    "hangerDetails": {
+      "fabricWeight": "320 GSM Virgin Wool Twill",
+      "hangerType": "Solid Walnut Deluxe Coat Hanger",
+      "cut": "Sharp Structured Oversized",
+      "swayIntensity": "medium"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Midnight Charcoal",
+        "hex": "#232323",
+        "image": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Desert Camel",
+        "hex": "#B49068",
+        "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "inStock": true,
+    "details": [
+      "100% fine Italian Virgin Wool",
+      "Interior passport & card pockets",
+      "Includes luxury wooden hanger"
+    ],
+    "shipping": "Complimentary express courier shipping.",
+    "returns": "30-day exchange."
+  },
+  {
+    "id": "nv-115",
+    "name": "Waffle Knit Henley Shirt",
+    "subtitle": "Thermal Pima Cotton / Corozo Buttons",
+    "price": 2250,
+    "originalPrice": 2999,
+    "currency": "Rs.",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "category": "Clothing",
+    "gender": "Men",
+    "isBestSeller": true,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "description": "A rugged wardrobe staple engineered from heavy 280 GSM honeycomb waffle knit organic cotton. Features custom Corozo nut buttons and ribbed cuffs.",
+    "hangerDetails": {
+      "fabricWeight": "280 GSM Honeycomb Waffle",
+      "hangerType": "Oak Wood Shoulder Hanger",
+      "cut": "Regular Athletic Fit",
+      "swayIntensity": "medium"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Vintage Olive",
+        "hex": "#4D5340",
+        "image": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Heather Ecru",
+        "hex": "#E0DAD0",
+        "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "inStock": true,
+    "details": [
+      "100% long-staple organic cotton waffle",
+      "Corozo wood button placket",
+      "Pre-washed for extra softness"
+    ],
+    "shipping": "Standard delivery Rs. 200.",
+    "returns": "30-day exchange."
+  },
+  {
+    "id": "nv-116",
+    "name": "Suede Chelsea Boots",
+    "subtitle": "Water-Resistant Italian Suede",
+    "price": 6890,
+    "originalPrice": 8500,
+    "currency": "Rs.",
+    "rating": 4.9,
+    "reviewCount": 78,
+    "category": "Footwear",
+    "gender": "Men",
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "isHangerItem": false,
+    "description": "Handcrafted Chelsea boots shaped on a classic British almond toe last. Crafted from velvety calfskin suede with flexible Goodyear welt construction.",
+    "images": [
+      "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Snuff Suede",
+        "hex": "#7A5034",
+        "image": "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "name": "Stealth Black",
+        "hex": "#191919",
+        "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ],
+    "inStock": true,
+    "details": [
+      "Full Italian suede leather",
+      "Goodyear welted crepe rubber sole",
+      "Dual elastic side gussets"
+    ],
+    "shipping": "Free express courier shipping in bespoke shoe box.",
+    "returns": "Free size exchanges."
+  }
+]

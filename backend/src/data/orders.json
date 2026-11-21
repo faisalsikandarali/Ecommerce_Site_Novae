@@ -1,0 +1,31 @@
+[
+  {
+    "id": "ord_1795172051907",
+    "orderNumber": "NV-2120",
+    "createdAt": "2026-11-20T10:54:11.907Z",
+    "customer": {
+      "fullName": "Test User",
+      "phone": "0300-1234567",
+      "email": "test@example.com",
+      "address": "Model Town Phase 2",
+      "city": "Multan",
+      "notes": ""
+    },
+    "items": [
+      {
+        "id": "nv-101",
+        "name": "Classic Oversized Shirt",
+        "color": "Ecru Beige",
+        "quantity": 1,
+        "price": 2498,
+        "size": "M"
+      }
+    ],
+    "subtotal": 2498,
+    "shippingCost": 200,
+    "total": 2698,
+    "paymentMethod": "Cash on Delivery",
+    "deliveryMethod": "Standard Delivery",
+    "status": "Confirmed"
+  }
+]

@@ -120,3 +120,21 @@ exports.updateOrderStatus = (req, res) => {
     res.status(500).json({ success: false, message: 'Failed to update order status', error: error.message });
   }
 };
+
+exports.getCustomerOrders = (req, res) => {
+  try {
+    const email = req.params.email ? req.params.email.toLowerCase().trim() : '';
+    const orders = readOrders();
+    const customerOrders = orders.filter(o => 
+      o.customer && o.customer.email && o.customer.email.toLowerCase().trim() === email
+    );
+
+    res.json({
+      success: true,
+      count: customerOrders.length,
+      data: customerOrders
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'Error retrieving customer orders', error: error.message });
+  }
+};

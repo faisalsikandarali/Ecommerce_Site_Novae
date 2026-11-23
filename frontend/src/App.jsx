@@ -41,6 +41,15 @@ export function App() {
   const { isLoggedIn } = useCustomerAuth();
   const { flyingItem, handleFlightComplete } = useCart();
 
+  const refreshProducts = async () => {
+    try {
+      const data = await api.getProducts();
+      setProducts(data);
+    } catch (err) {
+      console.error('Failed to reload products', err);
+    }
+  };
+
   // Load products (works both with backend API or self-contained client-side data)
   useEffect(() => {
     async function loadData() {
@@ -72,6 +81,9 @@ export function App() {
 
   const handleOrderSuccess = (order) => {
     setLastOrder(order);
+    try {
+      localStorage.setItem('novae_last_order', JSON.stringify(order));
+    } catch (e) {}
     navigateTo('confirmation');
   };
 
@@ -80,7 +92,11 @@ export function App() {
     if (isAuthenticated) {
       return (
         <AdminDashboardPage
-          onNavigateToStore={() => navigateTo('home')}
+          onNavigateToStore={() => {
+            refreshProducts();
+            navigateTo('home');
+          }}
+          onProductsUpdated={refreshProducts}
         />
       );
     } else {

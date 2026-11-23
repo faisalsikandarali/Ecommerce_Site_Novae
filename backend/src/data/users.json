@@ -1,0 +1,38 @@
+[
+  {
+    "id": "usr_101",
+    "fullName": "Asad Bilal",
+    "email": "asad@example.com",
+    "phone": "0300-1234567",
+    "city": "Multan",
+    "address": "Model Town Phase 2, Street 7",
+    "registeredAt": "2026-11-15T10:00:00.000Z",
+    "totalSpent": 5196,
+    "totalOrders": 2,
+    "vipTier": "Gold Wardrobe Tier",
+    "measurements": {
+      "shoulder": "48 cm",
+      "chest": "104 cm",
+      "waist": "32 in",
+      "recommendedSize": "M Relaxed"
+    }
+  },
+  {
+    "id": "usr_102",
+    "fullName": "Sara Khan",
+    "email": "sara.k@example.com",
+    "phone": "0321-9876543",
+    "city": "Lahore",
+    "address": "DHA Phase 5, Sector C",
+    "registeredAt": "2026-11-18T14:30:00.000Z",
+    "totalSpent": 10987,
+    "totalOrders": 3,
+    "vipTier": "Platinum Tier",
+    "measurements": {
+      "shoulder": "40 cm",
+      "chest": "92 cm",
+      "waist": "28 in",
+      "recommendedSize": "S"
+    }
+  }
+]

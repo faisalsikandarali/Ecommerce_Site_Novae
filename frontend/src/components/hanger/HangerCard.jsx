@@ -15,6 +15,7 @@ export const HangerCard = ({ product, onSelect, index = 0, isCompact = false }) 
   const activeColor = product.colors?.[selectedColorIndex] || { name: 'Default', hex: '#333' };
   const currentImage = activeColor.image || product.images?.[0];
   const isWished = isInWishlist(product.id);
+  const isAvailable = product.inStock !== false && (product.stockCount === undefined || product.stockCount > 0);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -23,6 +24,7 @@ export const HangerCard = ({ product, onSelect, index = 0, isCompact = false }) 
 
   const handleQuickAdd = (e) => {
     e.stopPropagation();
+    if (!isAvailable) return;
     addToCart(product, product.sizes?.[0] || 'M', activeColor.name, 1, e);
   };
 
@@ -65,18 +67,26 @@ export const HangerCard = ({ product, onSelect, index = 0, isCompact = false }) 
         {/* Subtle cloth hanger suspension lines */}
         <div className="absolute top-0 inset-x-8 h-1 bg-gradient-to-b from-stone-300/40 to-transparent pointer-events-none" />
 
-        {/* Top Badges: New / Fabric */}
+        {/* Top Badges: New / Fabric / Sold Out */}
         <div className="absolute top-3 left-3 z-20 flex flex-col gap-1.5 items-start">
-          {product.isNewArrival && (
-            <span className="bg-stone-900 text-white text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-full shadow-sm">
-              New
+          {!isAvailable ? (
+            <span className="bg-red-700 text-white text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full shadow-sm">
+              Sold Out
             </span>
-          )}
-          {product.hangerDetails?.fabricWeight && (
-            <span className="bg-stone-100/90 backdrop-blur-xs text-stone-700 text-[10px] font-medium px-2 py-0.5 rounded-md border border-stone-200/60 hidden sm:inline-flex items-center gap-1">
-              <Sparkles className="w-2.5 h-2.5 text-amber-600" />
-              {product.hangerDetails.fabricWeight.split(' ')[0]} {product.hangerDetails.fabricWeight.split(' ')[1]}
-            </span>
+          ) : (
+            <>
+              {product.isNewArrival && (
+                <span className="bg-stone-900 text-white text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-full shadow-sm">
+                  New
+                </span>
+              )}
+              {product.hangerDetails?.fabricWeight && (
+                <span className="bg-stone-100/90 backdrop-blur-xs text-stone-700 text-[10px] font-medium px-2 py-0.5 rounded-md border border-stone-200/60 hidden sm:inline-flex items-center gap-1">
+                  <Sparkles className="w-2.5 h-2.5 text-amber-600" />
+                  {product.hangerDetails.fabricWeight.split(' ')[0]} {product.hangerDetails.fabricWeight.split(' ')[1]}
+                </span>
+              )}
+            </>
           )}
         </div>
 
@@ -94,25 +104,33 @@ export const HangerCard = ({ product, onSelect, index = 0, isCompact = false }) 
           <motion.img
             src={currentImage}
             alt={product.name}
-            className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+            className={`w-full h-full object-cover object-top transition-transform duration-700 ${
+              isAvailable ? 'group-hover:scale-105' : 'grayscale-[40%] opacity-90'
+            }`}
             loading="lazy"
           />
 
           {/* Quick Action Overlay on Desktop */}
           <div className="absolute inset-x-3 bottom-3 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <button
-              onClick={handleQuickAdd}
-              className="flex-1 bg-stone-900/90 hover:bg-black backdrop-blur-xs text-white text-xs font-semibold py-2.5 px-3 rounded-xl shadow-lg flex items-center justify-center gap-1.5 transition-transform active:scale-95"
-            >
-              <ShoppingBag className="w-3.5 h-3.5" />
-              <span>Quick Add</span>
-            </button>
+            {isAvailable ? (
+              <button
+                onClick={handleQuickAdd}
+                className="flex-1 bg-stone-900/90 hover:bg-black backdrop-blur-xs text-white text-xs font-semibold py-2.5 px-3 rounded-xl shadow-lg flex items-center justify-center gap-1.5 transition-transform active:scale-95 cursor-pointer"
+              >
+                <ShoppingBag className="w-3.5 h-3.5" />
+                <span>Quick Add</span>
+              </button>
+            ) : (
+              <div className="flex-1 bg-stone-900/80 backdrop-blur-xs text-stone-300 text-xs font-semibold py-2.5 px-3 rounded-xl shadow-lg text-center">
+                Currently Out of Stock
+              </div>
+            )}
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 onSelect && onSelect(product);
               }}
-              className="p-2.5 bg-white/90 hover:bg-white text-stone-900 rounded-xl shadow-lg transition-transform active:scale-95"
+              className="p-2.5 bg-white/90 hover:bg-white text-stone-900 rounded-xl shadow-lg transition-transform active:scale-95 cursor-pointer"
               title="Inspect"
             >
               <Eye className="w-4 h-4" />
@@ -126,7 +144,7 @@ export const HangerCard = ({ product, onSelect, index = 0, isCompact = false }) 
             <div className="flex items-center justify-between text-xs text-stone-400 mb-1">
               <span>{product.gender || 'Everyday'} • {product.category}</span>
               <span className="text-amber-600 font-medium flex items-center gap-0.5">
-                ★ {product.rating}
+                ★ {product.rating || 5.0}
               </span>
             </div>
             <h3 className="font-medium text-stone-900 text-sm line-clamp-1 group-hover:text-stone-600 transition-colors">

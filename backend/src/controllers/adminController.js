@@ -3,6 +3,7 @@ const path = require('path');
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const ordersFilePath = path.join(__dirname, '../data/orders.json');
+const usersFilePath = path.join(__dirname, '../data/users.json');
 
 const ADMIN_CREDENTIALS = {
   email: process.env.ADMIN_EMAIL || 'admin@novae.com',
@@ -47,6 +48,7 @@ exports.getStats = (req, res) => {
   try {
     let products = [];
     let orders = [];
+    let users = [];
 
     if (fs.existsSync(productsFilePath)) {
       products = JSON.parse(fs.readFileSync(productsFilePath, 'utf8'));
@@ -54,11 +56,40 @@ exports.getStats = (req, res) => {
     if (fs.existsSync(ordersFilePath)) {
       orders = JSON.parse(fs.readFileSync(ordersFilePath, 'utf8'));
     }
+    if (fs.existsSync(usersFilePath)) {
+      users = JSON.parse(fs.readFileSync(usersFilePath, 'utf8'));
+    }
 
     const totalRevenue = orders.reduce((sum, ord) => sum + (ord.total || 0), 0);
     const hangerItemsCount = products.filter(p => p.isHangerItem).length;
-    const confirmedOrders = orders.filter(o => o.status === 'Confirmed').length;
-    const deliveredOrders = orders.filter(o => o.status === 'Delivered').length;
+    
+    // Status breakdown
+    const statusCounts = {
+      Confirmed: orders.filter(o => o.status === 'Confirmed').length,
+      Processing: orders.filter(o => o.status === 'Processing').length,
+      'In Transit': orders.filter(o => o.status === 'In Transit').length,
+      Delivered: orders.filter(o => o.status === 'Delivered').length,
+      Cancelled: orders.filter(o => o.status === 'Cancelled').length
+    };
+
+    // Category revenue breakdown
+    const categoryRevenue = {
+      Clothing: 0,
+      Accessories: 0,
+      Footwear: 0,
+      Backpack: 0
+    };
+
+    orders.forEach(o => {
+      o.items?.forEach(item => {
+        const cat = item.category || 'Clothing';
+        if (categoryRevenue[cat] !== undefined) {
+          categoryRevenue[cat] += (item.price * item.quantity);
+        } else {
+          categoryRevenue.Clothing += (item.price * item.quantity);
+        }
+      });
+    });
 
     res.json({
       success: true,
@@ -67,9 +98,10 @@ exports.getStats = (req, res) => {
         ordersCount: orders.length,
         productsCount: products.length,
         hangerItemsCount,
-        confirmedOrders,
-        deliveredOrders,
-        recentOrders: orders.slice(0, 5)
+        usersCount: users.length,
+        statusCounts,
+        categoryRevenue,
+        recentOrders: orders.slice(0, 8)
       }
     });
   } catch (error) {

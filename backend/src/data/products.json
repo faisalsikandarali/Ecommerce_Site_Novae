@@ -1,5 +1,75 @@
 [
   {
+    "id": "nv-1795503632374",
+    "name": "Structured Gabardine Trench Jacket",
+    "subtitle": "Heavy 320 GSM Gabardine Cotton",
+    "price": 6990,
+    "originalPrice": 8500,
+    "currency": "Rs.",
+    "rating": 4.9,
+    "reviewCount": 3,
+    "category": "Clothing",
+    "gender": "Men",
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "inStock": true,
+    "stockCount": 15,
+    "description": "Bespoke tailoring with structured lapels and hanger presentation.",
+    "details": [
+      "320 GSM Gabardine weave",
+      "Weather resistant",
+      "Solid Walnut hanger included"
+    ],
+    "hangerDetails": {
+      "fabricWeight": "320 GSM Structured Gabardine",
+      "hangerType": "Solid Walnut Wood with Brass Hook",
+      "cut": "Oversized Boxy Silhouette",
+      "swayIntensity": "medium"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Desert Dune",
+        "hex": "#C2B280",
+        "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "shipping": "Standard delivery Rs. 200 nationwide.",
+    "returns": "30-day exchange available with hanger tag attached.",
+    "reviews": [
+      {
+        "id": "rev_1795503632422",
+        "author": "Hamza Malik",
+        "rating": 5,
+        "comment": "The garment looks stunning hanging in the wardrobe rail. Truly luxury feel.",
+        "createdAt": "2026-11-24T07:00:32.422Z"
+      },
+      {
+        "id": "rev_default_1",
+        "author": "Hamza Malik",
+        "rating": 5,
+        "comment": "The drape and linen texture are incredible. Hangs beautifully in my closet.",
+        "createdAt": "2026-11-21T07:00:32.422Z"
+      },
+      {
+        "id": "rev_default_2",
+        "author": "Zainab Tariq",
+        "rating": 4.8,
+        "comment": "Premium stitching and fast courier delivery to Lahore. Worth every rupee.",
+        "createdAt": "2026-11-17T07:00:32.422Z"
+      }
+    ]
+  },
+  {
     "id": "nv-1795456837041",
     "name": "new",
     "subtitle": "designe",

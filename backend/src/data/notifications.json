@@ -1,0 +1,30 @@
+[
+  {
+    "id": "notif_1795503632416",
+    "orderId": "ord_1795503632395",
+    "orderNumber": "NV-1800",
+    "customerEmail": "vip@novae.com",
+    "customerName": "VIP Patron Test",
+    "status": "In Transit",
+    "title": "Order #NV-1800 Status: In Transit",
+    "message": "Order #NV-1800 has been dispatched! It is in transit with TCS Boutique Express (Tracking: TRK-NV-13513).",
+    "trackingCode": "TRK-NV-13513",
+    "courier": "TCS Boutique Express",
+    "createdAt": "2026-11-24T07:00:32.414Z",
+    "read": false,
+    "emailSent": true
+  },
+  {
+    "id": "notif_1795503632397",
+    "orderId": "ord_1795503632395",
+    "orderNumber": "NV-1800",
+    "customerEmail": "vip@novae.com",
+    "customerName": "VIP Patron Test",
+    "status": "Confirmed",
+    "title": "Order #NV-1800 Confirmed!",
+    "message": "Your order #NV-1800 has been received and confirmed. Our tailors are preparing your pieces.",
+    "createdAt": "2026-11-24T07:00:32.395Z",
+    "read": false,
+    "emailSent": true
+  }
+]

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   User, Package, MapPin, Ruler, LogOut, CheckCircle2, Clock, Truck,
-  ChevronRight, Shirt, ShoppingBag, ShieldCheck, Check
+  ChevronRight, Shirt, ShoppingBag, ShieldCheck, Check, Mail, X
 } from 'lucide-react';
 import { useCustomerAuth } from '../context/CustomerAuthContext';
 import { api } from '../services/api';
@@ -28,6 +28,7 @@ export const AccountPage = ({ onNavigate }) => {
   const [activeTab, setActiveTab] = useState('orders');
   const [orders, setOrders] = useState([]);
   const [loadingOrders, setLoadingOrders] = useState(true);
+  const [previewEmailOrder, setPreviewEmailOrder] = useState(null);
 
   useEffect(() => {
     async function loadOrders() {
@@ -214,12 +215,28 @@ export const AccountPage = ({ onNavigate }) => {
                           ))}
                         </div>
 
-                        {/* Delivery Footer */}
-                        <div className="pt-3 flex flex-col sm:flex-row justify-between items-start sm:items-center text-[11px] text-stone-500 border-t border-stone-200 gap-1">
-                          <span>Shipping to: <strong>{ord.customer?.city || 'Multan'}</strong> ({ord.customer?.address})</span>
-                          <span className="font-medium text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">
-                            {ord.paymentMethod || 'Cash on Delivery'}
-                          </span>
+                        {/* Delivery Footer & Email notification trigger */}
+                        <div className="pt-3 flex flex-col sm:flex-row justify-between items-start sm:items-center text-[11px] text-stone-500 border-t border-stone-200 gap-2">
+                          <div className="space-y-0.5">
+                            <p>Shipping to: <strong>{ord.customer?.city || 'Multan'}</strong> ({ord.customer?.address})</p>
+                            <p className="text-indigo-800 font-semibold flex items-center gap-1">
+                              <Truck className="w-3.5 h-3.5" />
+                              <span>Tracking: {ord.trackingCode || 'TRK-NV-3341'} ({ord.courier || 'TCS Express'})</span>
+                            </p>
+                          </div>
+                          
+                          <div className="flex items-center gap-2 self-end sm:self-auto">
+                            <button
+                              onClick={() => setPreviewEmailOrder(ord)}
+                              className="px-3 py-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-900 border border-indigo-200 font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                            >
+                              <Mail className="w-3.5 h-3.5" />
+                              <span>View Notification Email</span>
+                            </button>
+                            <span className="font-medium text-emerald-800 bg-emerald-50 px-2.5 py-1.5 rounded-xl border border-emerald-200">
+                              {ord.paymentMethod || 'Cash on Delivery'}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     );
@@ -346,6 +363,71 @@ export const AccountPage = ({ onNavigate }) => {
           )}
         </div>
       </div>
+      {/* CLIENT EMAIL DISPATCH PREVIEW MODAL */}
+      {previewEmailOrder && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-xs overflow-y-auto">
+          <div className="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 space-y-4 shadow-2xl border border-stone-200 max-h-[95vh] overflow-y-auto">
+            <div className="flex items-center justify-between pb-3 border-b border-stone-200">
+              <div>
+                <span className="text-[10px] font-bold text-indigo-700 uppercase tracking-widest bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">
+                  Official Email Notification
+                </span>
+                <h3 className="text-base font-serif font-bold text-stone-900 mt-1">
+                  Sent to {previewEmailOrder.customer?.email || 'your email'}
+                </h3>
+              </div>
+              <button onClick={() => setPreviewEmailOrder(null)} className="p-1 text-stone-400 hover:text-stone-900 cursor-pointer">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="bg-stone-50 p-3 rounded-xl border border-stone-200 text-xs text-stone-600 space-y-1">
+              <p><strong>From:</strong> orders@novae-atelier.com (NOVAÉ Boutique Concierge)</p>
+              <p><strong>Subject:</strong> NOVAÉ Order Update: #{previewEmailOrder.orderNumber} Status: {previewEmailOrder.status || 'Confirmed'}</p>
+            </div>
+
+            <div className="border border-stone-200 rounded-2xl p-6 bg-[#FAF8F5] space-y-4">
+              <div className="text-center pb-3 border-b border-stone-200">
+                <h2 className="font-serif tracking-[0.25em] font-bold text-xl uppercase text-stone-900">NOVAÉ</h2>
+                <p className="text-[10px] text-stone-400 uppercase tracking-widest mt-0.5">Haute Couture & Everyday Living</p>
+              </div>
+
+              <div className="py-2 text-center space-y-1.5">
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-800 text-white uppercase tracking-wider">
+                  {previewEmailOrder.status || 'Confirmed'}
+                </span>
+                <h3 className="text-lg font-serif font-bold text-stone-900">
+                  Order #{previewEmailOrder.orderNumber} Status Notification
+                </h3>
+                <p className="text-xs text-stone-600 max-w-md mx-auto">
+                  Dear {previewEmailOrder.customer?.fullName || 'Valued Client'}, your order is currently <strong>{previewEmailOrder.status || 'Confirmed'}</strong>.
+                </p>
+              </div>
+
+              <div className="bg-white p-4 rounded-xl border border-stone-200 text-xs space-y-2">
+                <div className="flex justify-between font-mono text-stone-500 border-b border-stone-100 pb-2">
+                  <span>Order Ref: #{previewEmailOrder.orderNumber}</span>
+                  <span>Total: Rs. {(previewEmailOrder.total || 0).toLocaleString()}</span>
+                </div>
+                <div className="text-stone-700">
+                  <p><strong>Courier:</strong> {previewEmailOrder.courier || 'TCS Express'}</p>
+                  <p><strong>Tracking #:</strong> {previewEmailOrder.trackingCode || 'TRK-NV-3341'}</p>
+                  <p><strong>Shipping To:</strong> {previewEmailOrder.customer?.address}, {previewEmailOrder.customer?.city}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex justify-end pt-2">
+              <button
+                onClick={() => setPreviewEmailOrder(null)}
+                className="px-5 py-2 rounded-xl bg-stone-900 text-white text-xs font-semibold cursor-pointer hover:bg-black"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

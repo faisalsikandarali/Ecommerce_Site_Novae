@@ -144,6 +144,19 @@ async function runTests() {
   const usersRes = await request({ host: 'localhost', port: 5050, path: '/api/users', method: 'GET' });
   console.log('9. Users list:', usersRes.status === 200 && usersRes.data.success ? `PASS (${usersRes.data.count} users)` : 'FAIL');
 
+  // 10. Confirmed Orders Dedicated Folder Check
+  const confirmedRes = await request({ host: 'localhost', port: 5050, path: '/api/orders/folders/confirmed', method: 'GET' });
+  console.log('10. Confirmed Orders Folder:', confirmedRes.status === 200 && confirmedRes.data.success ? `PASS (${confirmedRes.data.count} confirmed orders in folder)` : 'FAIL');
+
+  // 11. Order Folders Summary Metrics
+  const summaryRes = await request({ host: 'localhost', port: 5050, path: '/api/orders/folders/summary', method: 'GET' });
+  console.log('11. Order Folders Summary:', summaryRes.status === 200 && summaryRes.data.data.confirmed !== undefined ? 'PASS' : 'FAIL');
+
+  // 12. Notifications & Email Dispatch Log Check
+  const notifsRes = await request({ host: 'localhost', port: 5050, path: '/api/orders/notifications', method: 'GET' });
+  const emailsRes = await request({ host: 'localhost', port: 5050, path: '/api/orders/emails/logs', method: 'GET' });
+  console.log('12. In-App Notifications & Email Logs:', notifsRes.status === 200 && emailsRes.status === 200 ? `PASS (${notifsRes.data.count} notifs, ${emailsRes.data.count} emails dispatched)` : 'FAIL');
+
   console.log('--- All Backend Tests Finished Successfully ---');
 }
 

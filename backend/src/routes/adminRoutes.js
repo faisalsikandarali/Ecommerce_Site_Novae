@@ -15,9 +15,16 @@ router.post('/products', productController.createProduct);
 router.put('/products/:id', productController.updateProduct);
 router.delete('/products/:id', productController.deleteProduct);
 
-// Orders management
+// Orders management & Folder pipelines
 router.get('/orders', orderController.getAllOrders);
+router.get('/orders/confirmed', orderController.getConfirmedOrders);
+router.get('/orders/folders/summary', orderController.getOrderFoldersSummary);
 router.put('/orders/:id/status', orderController.updateOrderStatus);
+
+// Notifications & Email logs
+router.get('/notifications', orderController.getAllNotifications);
+router.get('/emails/logs', orderController.getEmailLogs);
+router.post('/emails/resend/:orderId', orderController.resendEmailNotification);
 
 // Customers management
 router.get('/users', userController.getAllUsers);

@@ -153,13 +153,13 @@ export const api = {
     return filtered.length > 0 ? filtered : all;
   },
 
-  // Update order status
-  async updateOrderStatus(orderId, status) {
+  // Update order status with optional note, trackingCode and courier (triggers notifications & emails)
+  async updateOrderStatus(orderId, status, note = '', trackingCode = '', courier = '') {
     try {
       const response = await fetch(`${API_BASE}/admin/orders/${orderId}/status`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ status })
+        body: JSON.stringify({ status, note, trackingCode, courier })
       });
       if (response.ok) {
         const data = await response.json();
@@ -167,6 +167,110 @@ export const api = {
       }
     } catch (e) {
       console.warn('Backend order status update failed', e);
+    }
+    return null;
+  },
+
+  // Get order folders summary metrics
+  async getOrderFoldersSummary() {
+    try {
+      const response = await fetch(`${API_BASE}/orders/folders/summary`);
+      if (response.ok) {
+        const data = await response.json();
+        return data.data;
+      }
+    } catch (e) {
+      console.warn('Failed to load order folders summary', e);
+    }
+    return null;
+  },
+
+  // Get confirmed orders folder
+  async getConfirmedOrders() {
+    try {
+      const response = await fetch(`${API_BASE}/orders/folders/confirmed`);
+      if (response.ok) {
+        const data = await response.json();
+        return data.data;
+      }
+    } catch (e) {
+      console.warn('Failed to load confirmed orders folder', e);
+    }
+    const all = await this.getOrders();
+    return all.filter(o => (o.status || 'Confirmed').toLowerCase() === 'confirmed' || (o.status || '').toLowerCase() === 'processing');
+  },
+
+  // Get all customer notifications
+  async getNotifications() {
+    try {
+      const response = await fetch(`${API_BASE}/orders/notifications`);
+      if (response.ok) {
+        const data = await response.json();
+        return data.data;
+      }
+    } catch (e) {
+      console.warn('Failed to fetch notifications', e);
+    }
+    return [];
+  },
+
+  // Get customer specific notifications
+  async getCustomerNotifications(email) {
+    if (!email) return [];
+    try {
+      const response = await fetch(`${API_BASE}/orders/notifications/customer/${encodeURIComponent(email)}`);
+      if (response.ok) {
+        const data = await response.json();
+        return data.data;
+      }
+    } catch (e) {
+      console.warn('Failed to fetch customer notifications', e);
+    }
+    return [];
+  },
+
+  // Mark notification read
+  async markNotificationRead(id) {
+    try {
+      const response = await fetch(`${API_BASE}/orders/notifications/${id}/read`, {
+        method: 'PUT'
+      });
+      if (response.ok) {
+        const data = await response.json();
+        return data.data;
+      }
+    } catch (e) {
+      console.warn('Failed to mark notification read', e);
+    }
+    return true;
+  },
+
+  // Get simulated email dispatch logs
+  async getEmailLogs() {
+    try {
+      const response = await fetch(`${API_BASE}/orders/emails/logs`);
+      if (response.ok) {
+        const data = await response.json();
+        return data.data;
+      }
+    } catch (e) {
+      console.warn('Failed to fetch email logs', e);
+    }
+    return [];
+  },
+
+  // Resend email notification
+  async resendEmailNotification(orderId) {
+    try {
+      const response = await fetch(`${API_BASE}/orders/emails/resend/${orderId}`, {
+        method: 'POST'
+      });
+      if (response.ok) {
+        const data = await response.json();
+        return data.data;
+      }
+    } catch (e) {
+      console.warn('Failed to resend email', e);
     }
     return null;
   },

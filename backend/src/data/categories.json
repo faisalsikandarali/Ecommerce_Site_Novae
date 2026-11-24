@@ -1,0 +1,79 @@
+[
+  {
+    "id": "cat_1",
+    "name": "Clothing",
+    "slug": "clothing",
+    "description": "Tailored shirts, outerwear, trousers, and handcrafted atelier garments.",
+    "department": "Apparel",
+    "icon": "Shirt",
+    "itemCount": 8,
+    "active": true,
+    "createdAt": "2026-11-20T10:00:00.000Z"
+  },
+  {
+    "id": "cat_2",
+    "name": "Tops & Shirts",
+    "slug": "tops-shirts",
+    "description": "Pure linen button-ups, poplin overshirts, and textured camp collars.",
+    "department": "Apparel",
+    "icon": "Shirt",
+    "itemCount": 5,
+    "active": true,
+    "createdAt": "2026-11-20T10:00:00.000Z"
+  },
+  {
+    "id": "cat_3",
+    "name": "Outerwear",
+    "slug": "outerwear",
+    "description": "Minimalist chore coats, tailored wool blazers, and trench coats.",
+    "department": "Layering",
+    "icon": "Layers",
+    "itemCount": 3,
+    "active": true,
+    "createdAt": "2026-11-20T10:00:00.000Z"
+  },
+  {
+    "id": "cat_4",
+    "name": "Bottoms",
+    "slug": "bottoms",
+    "description": "Pleated trousers, linen drawstring slacks, and relaxed chinos.",
+    "department": "Apparel",
+    "icon": "Scissors",
+    "itemCount": 4,
+    "active": true,
+    "createdAt": "2026-11-20T10:00:00.000Z"
+  },
+  {
+    "id": "cat_5",
+    "name": "Accessories",
+    "slug": "accessories",
+    "description": "Silk pocket squares, leather belts, and handcrafted shawls.",
+    "department": "Lifestyle",
+    "icon": "Watch",
+    "itemCount": 2,
+    "active": true,
+    "createdAt": "2026-11-20T10:00:00.000Z"
+  },
+  {
+    "id": "cat_6",
+    "name": "Footwear",
+    "slug": "footwear",
+    "description": "Artisan suede loafers, minimal leather sneakers, and slides.",
+    "department": "Footwear",
+    "icon": "Footprints",
+    "itemCount": 1,
+    "active": true,
+    "createdAt": "2026-11-20T10:00:00.000Z"
+  },
+  {
+    "id": "cat_1795504589534",
+    "name": "Evening Velvet 1795504589448",
+    "slug": "evening-velvet-1795504589448",
+    "description": "Bespoke velvet jackets",
+    "department": "Apparel",
+    "icon": "Shirt",
+    "itemCount": 0,
+    "active": true,
+    "createdAt": "2026-11-24T07:16:29.534Z"
+  }
+]

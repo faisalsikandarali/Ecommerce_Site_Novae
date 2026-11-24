@@ -5,6 +5,7 @@ const ordersFilePath = path.join(__dirname, '../data/orders.json');
 const confirmedOrdersFilePath = path.join(__dirname, '../data/confirmed_orders.json');
 const notificationsFilePath = path.join(__dirname, '../data/notifications.json');
 const emailLogsFilePath = path.join(__dirname, '../data/email_logs.json');
+const usersFilePath = path.join(__dirname, '../data/users.json');
 
 // Helper to safely read JSON
 const readJsonFile = (filePath, defaultVal = []) => {
@@ -41,6 +42,52 @@ const saveNotifications = (notifs) => writeJsonFile(notificationsFilePath, notif
 
 const readEmailLogs = () => readJsonFile(emailLogsFilePath, []);
 const saveEmailLogs = (emails) => writeJsonFile(emailLogsFilePath, emails);
+
+const updateUserStats = (customer, orderTotal) => {
+  try {
+    if (!fs.existsSync(usersFilePath)) return;
+    const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf8'));
+    const email = (customer.email || '').toLowerCase().trim();
+    const phone = (customer.phone || '').trim().replace(/[^0-9]/g, '');
+
+    let user = users.find(u => 
+      (email && u.email && u.email.toLowerCase().trim() === email) ||
+      (phone && u.phone && u.phone.replace(/[^0-9]/g, '') === phone)
+    );
+
+    if (user) {
+      user.totalOrders = (user.totalOrders || 0) + 1;
+      user.totalSpent = (user.totalSpent || 0) + (Number(orderTotal) || 0);
+      user.lastOrderAt = new Date().toISOString();
+      if (customer.address) user.address = customer.address;
+      if (customer.city) user.city = customer.city;
+    } else {
+      user = {
+        id: `usr_${Date.now()}`,
+        fullName: customer.fullName || 'Valued Patron',
+        email: email || `${phone}@phone.novae.com`,
+        phone: customer.phone || '',
+        city: customer.city || 'Multan',
+        address: customer.address || '',
+        authProvider: 'checkout',
+        registeredAt: new Date().toISOString(),
+        totalSpent: Number(orderTotal) || 0,
+        totalOrders: 1,
+        vipTier: 'Wardrobe Member',
+        measurements: {
+          shoulder: '48 cm',
+          chest: '104 cm',
+          waist: '32 in',
+          recommendedSize: 'M'
+        }
+      };
+      users.unshift(user);
+    }
+    fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
+  } catch (err) {
+    console.error('Error updating patron stats:', err);
+  }
+};
 
 // Generate formatted HTML email template for order status update
 const generateOrderEmailHtml = (order, status, trackingCode, courier) => {
@@ -226,6 +273,9 @@ exports.createOrder = (req, res) => {
     };
     emailLogs.unshift(newEmailLog);
     saveEmailLogs(emailLogs);
+
+    // Update or register patron statistics in users.json
+    updateUserStats(newOrder.customer, newOrder.total);
 
     res.status(201).json({
       success: true,

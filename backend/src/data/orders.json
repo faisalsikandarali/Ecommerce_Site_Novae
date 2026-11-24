@@ -1,9 +1,49 @@
 [
   {
+    "id": "ord_1795504518643",
+    "orderNumber": "NV-6636",
+    "createdAt": "2026-11-24T07:15:18.643Z",
+    "updatedAt": "2026-11-24T07:15:18.643Z",
+    "customer": {
+      "fullName": "Phone Client Multan",
+      "phone": "0300-9988776",
+      "email": "03009988776@phone.novae.com",
+      "address": "Cantt Avenue 5",
+      "city": "Multan",
+      "notes": ""
+    },
+    "items": [
+      {
+        "id": "nv-1",
+        "name": "Raw Flax Safari Shirt",
+        "price": 2999,
+        "quantity": 1,
+        "size": "L"
+      }
+    ],
+    "subtotal": 2999,
+    "shippingCost": 0,
+    "total": 2999,
+    "paymentMethod": "Cash on Delivery",
+    "deliveryMethod": "Standard Priority Courier",
+    "status": "Confirmed",
+    "folder": "confirmed",
+    "trackingCode": "TRK-NV-54059",
+    "courier": "TCS Boutique Express",
+    "timeline": [
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-11-24T07:15:18.643Z",
+        "note": "Order successfully placed and confirmed via checkout",
+        "updatedBy": "System"
+      }
+    ]
+  },
+  {
     "id": "ord_1795503632395",
     "orderNumber": "NV-1800",
     "createdAt": "2026-11-24T07:00:32.395Z",
-    "updatedAt": "2026-11-24T07:00:32.414Z",
+    "updatedAt": "2026-11-24T07:04:18.032Z",
     "customer": {
       "fullName": "VIP Patron Test",
       "phone": "0300-9999999",
@@ -26,8 +66,8 @@
     "total": 7190,
     "paymentMethod": "Cash on Delivery",
     "deliveryMethod": "Standard Priority Courier",
-    "status": "In Transit",
-    "folder": "in_transit",
+    "status": "Delivered",
+    "folder": "delivered",
     "trackingCode": "TRK-NV-13513",
     "courier": "TCS Boutique Express",
     "timeline": [
@@ -41,6 +81,12 @@
         "status": "In Transit",
         "timestamp": "2026-11-24T07:00:32.414Z",
         "note": "Status transitioned from Confirmed to In Transit",
+        "updatedBy": "Boutique Operations Admin"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-11-24T07:04:18.032Z",
+        "note": "Delivered safely to client address",
         "updatedBy": "Boutique Operations Admin"
       }
     ]
@@ -76,7 +122,30 @@
     "total": 4200,
     "paymentMethod": "Cash on Delivery",
     "deliveryMethod": "Standard Delivery",
-    "status": "Confirmed"
+    "status": "Delivered",
+    "folder": "delivered",
+    "updatedAt": "2026-11-24T07:05:49.945Z",
+    "timeline": [
+      {
+        "status": "Processing",
+        "timestamp": "2026-11-24T07:05:33.762Z",
+        "note": "Order moved to steam press & tailoring queue",
+        "updatedBy": "Boutique Operations Admin"
+      },
+      {
+        "status": "In Transit",
+        "timestamp": "2026-11-24T07:05:44.258Z",
+        "note": "Package handed over to TCS courier rider",
+        "updatedBy": "Boutique Operations Admin"
+      },
+      {
+        "status": "Delivered",
+        "timestamp": "2026-11-24T07:05:49.945Z",
+        "note": "Delivered safely to client address",
+        "updatedBy": "Boutique Operations Admin"
+      }
+    ],
+    "trackingCode": "TRK-NV-58871"
   },
   {
     "id": "ord_1795456647489",
@@ -104,7 +173,17 @@
     "total": 7190,
     "paymentMethod": "Cash on Delivery",
     "deliveryMethod": "Standard Delivery",
-    "status": "In Transit"
+    "status": "Delivered",
+    "folder": "delivered",
+    "updatedAt": "2026-11-24T07:05:10.704Z",
+    "timeline": [
+      {
+        "status": "Delivered",
+        "timestamp": "2026-11-24T07:05:10.704Z",
+        "note": "Delivered safely to client address",
+        "updatedBy": "Boutique Operations Admin"
+      }
+    ]
   },
   {
     "id": "ord_1795456090489",
@@ -132,7 +211,23 @@
     "total": 7190,
     "paymentMethod": "Cash on Delivery",
     "deliveryMethod": "Standard Delivery",
-    "status": "In Transit"
+    "status": "Confirmed",
+    "folder": "confirmed",
+    "updatedAt": "2026-11-24T07:05:24.497Z",
+    "timeline": [
+      {
+        "status": "Cancelled",
+        "timestamp": "2026-11-24T07:05:18.749Z",
+        "note": "Cancelled per client request or boutique stock reconciliation",
+        "updatedBy": "Boutique Operations Admin"
+      },
+      {
+        "status": "Confirmed",
+        "timestamp": "2026-11-24T07:05:24.497Z",
+        "note": "Restored back to confirmed folder",
+        "updatedBy": "Boutique Operations Admin"
+      }
+    ]
   },
   {
     "id": "ord_1795455532233",

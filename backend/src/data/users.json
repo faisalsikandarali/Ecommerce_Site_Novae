@@ -1,5 +1,49 @@
 [
   {
+    "id": "usr_p_1795504518639",
+    "fullName": "Phone Client Multan",
+    "email": "03009988776@phone.novae.com",
+    "phone": "0300-9988776",
+    "city": "Multan",
+    "address": "Cantt Avenue 5",
+    "authProvider": "phone",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+    "registeredAt": "2026-11-24T07:15:18.639Z",
+    "lastLoginAt": "2026-11-24T07:15:18.639Z",
+    "totalSpent": 2999,
+    "totalOrders": 1,
+    "vipTier": "Phone Verified Patron",
+    "measurements": {
+      "shoulder": "48 cm",
+      "chest": "104 cm",
+      "waist": "32 in",
+      "recommendedSize": "M Relaxed"
+    },
+    "lastOrderAt": "2026-11-24T07:15:18.654Z"
+  },
+  {
+    "id": "usr_g_1795504518636",
+    "fullName": "VIP Google Patron",
+    "email": "client.vip@gmail.com",
+    "phone": "",
+    "city": "Multan",
+    "address": "",
+    "authProvider": "google",
+    "googleId": "g_12345",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+    "registeredAt": "2026-11-24T07:15:18.636Z",
+    "lastLoginAt": "2026-11-24T07:15:18.636Z",
+    "totalSpent": 0,
+    "totalOrders": 0,
+    "vipTier": "Google Verified Patron",
+    "measurements": {
+      "shoulder": "48 cm",
+      "chest": "104 cm",
+      "waist": "32 in",
+      "recommendedSize": "M Relaxed"
+    }
+  },
+  {
     "id": "usr_101",
     "fullName": "Asad Bilal",
     "email": "asad@example.com",

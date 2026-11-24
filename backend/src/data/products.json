@@ -1,5 +1,52 @@
 [
   {
+    "id": "nv-1795504518631",
+    "name": "Silk Bandgalas",
+    "subtitle": "Signature Boutique Drop",
+    "price": 2999,
+    "originalPrice": 3500,
+    "currency": "Rs.",
+    "rating": 5,
+    "reviewCount": 1,
+    "category": "Clothing",
+    "gender": "Men",
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "isHangerItem": true,
+    "inStock": true,
+    "stockCount": 10,
+    "description": "Atelier evening wear",
+    "details": [
+      "100% sustainably sourced atelier weave",
+      "Hand-finished seams with signature drape",
+      "Signature boutique oak wood hanger included"
+    ],
+    "hangerDetails": {
+      "fabricWeight": "240 GSM Pure Flax Linen",
+      "hangerType": "Scandi Oak Wood with Brushed Brass Hook",
+      "cut": "Relaxed Boxy Fit",
+      "swayIntensity": "medium"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      {
+        "name": "Natural Tone",
+        "hex": "#D8CAB8",
+        "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "shipping": "Standard delivery Rs. 200 nationwide.",
+    "returns": "30-day exchange available with hanger tag attached."
+  },
+  {
     "id": "nv-1795503632374",
     "name": "Structured Gabardine Trench Jacket",
     "subtitle": "Heavy 320 GSM Gabardine Cotton",
